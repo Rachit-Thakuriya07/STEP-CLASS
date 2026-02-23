@@ -1,20 +1,18 @@
 public class OOPSBannerApp_uc4 {
-   public static void main(String[] args) {
+    public static void main(String[] args) {
 
-       
-        String[] banner = {
-        " *****    *****    ******    ****** ",
-        "*     *  *     *   *     *   *      ",
-        "*     *  *     *   *     *   *      ",
-        "*     *  *     *   ******    ****** ",
-        "*     *  *     *   *               *",
-        "*     *  *     *   *               *",
-        " *****    *****    *         ****** "    
-        };
+        String[] banner = new String[7];
 
-        // Print banner using loop
-        for (String line : banner) {
-            System.out.println(line);
+        banner[0] = " *****    *****    ******  ***** ";
+        banner[1] = "*     *  *     *  *     *  *     ";
+        banner[2] = "*     *  *     *  *     *  *      ";
+        banner[3] = "*     *  *     *  ******   ***** ";
+        banner[4] = "*     *  *     *  *            *";
+        banner[5] = "*     *  *     *  *            *";
+        banner[6] = " *****    *****   *        ***** ";
+
+        for (int i = 0; i < banner.length; i++) {
+            System.out.println(banner[i]);
         }
     }
 }
